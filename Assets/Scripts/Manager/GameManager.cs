@@ -5,7 +5,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class GameManager : MonoBehaviour
+public sealed class GameManager : MonoBehaviour
 {
     private static GameManager instance;
     private Transform scoreText;
@@ -43,12 +43,12 @@ public class GameManager : MonoBehaviour
         StartGame();
     }
 
-    public virtual void SetGameOver(bool isGameOver)
+    public void SetGameOver(bool isGameOver)
     {
         this.isGameOver = isGameOver;   
     }
 
-    public virtual void DisableMoveLeft()
+    public void DisableMoveLeft()
     {
         if (!isGameOver) { return; }
 
@@ -58,17 +58,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public virtual void AddPoint(int point)
+    public void AddPoint(int point)
     {
         this.point += point;
     }
 
-    public virtual void Pause()
+    public void Pause()
     {
         Time.timeScale = 0f;
     }
 
-    public virtual void Resume() 
+    public void Resume() 
     {
         Time.timeScale = 1f; 
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : AbstractMonoBehaviour
+public sealed class AudioManager : AbstractMonoBehaviour
 {
     private static AudioManager instance;
     [SerializeField] private AudioSource audioSource;
@@ -32,7 +32,7 @@ public class AudioManager : AbstractMonoBehaviour
         }
     }
 
-    public virtual void PlaySound(string sound)
+    public void PlaySound(string sound)
     {
         audioSource.clip = Resources.Load<AudioClip>("Sound/" + sound);
         audioSource.Play();

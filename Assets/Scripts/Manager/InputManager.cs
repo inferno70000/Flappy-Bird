@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : MonoBehaviour
+public sealed class InputManager : MonoBehaviour
 {
     private static InputManager instance;
 
