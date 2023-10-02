@@ -246,8 +246,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000028771888, y: -0.008643941}
-  m_Size: {x: 0.17567818, y: 0.13000025}
+  m_Offset: {x: -0.0013043149, y: -0.009947934}
+  m_Size: {x: 0.15351142, y: 0.11696233}
   m_Direction: 1
 --- !u!114 &197187028
 MonoBehaviour:
@@ -1808,7 +1808,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
